@@ -1,0 +1,11 @@
+{
+	"files.exclude": {
+		"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/.idea": true,
+		"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/.kdev4": true,
+		"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/.vscode": true,
+		"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/Content": true,
+		"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/DerivedDataCache": true,
+		"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/Intermediate": true,
+		"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/Saved": true
+	}
+}

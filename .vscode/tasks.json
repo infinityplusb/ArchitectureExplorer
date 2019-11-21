@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "ArchitectureExplorer Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Mac",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"IOS",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"HTML5",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"Linux",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Shipping",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorer TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorer TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorer",
+				"TVOS",
+				"Test",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorerEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Linux",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorerEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Linux",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorerEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Linux",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorerEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Mac",
+				"Debug",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorerEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Mac",
+				"DebugGame",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"ArchitectureExplorerEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		},
+		{
+			"label": "ArchitectureExplorerEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"ArchitectureExplorerEditor",
+				"Mac",
+				"Development",
+				"/home/brian/Documents/Unreal Projects/ArchitectureExplorer/ArchitectureExplorer.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/brian/Programs/UnrealEngine"
+			}
+		}
+	]
+}
